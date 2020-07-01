@@ -70,6 +70,6 @@ class RestaurantTest < Minitest::Test
     restaurant2 = Restaurant.new('16:00', 'Il Poggio')
 
     assert_equal "Fuel Cafe will be closing at 11:00AM", restaurant1.announce_closing_time(1)
-    assert_equal "Il Poggio will be closing at 7:00PM", restaurant1.announce_closing_time(3)
+    assert_equal "Il Poggio will be closing at 7:00PM", restaurant2.announce_closing_time(3)
   end
 end
